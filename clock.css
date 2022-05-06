@@ -1,0 +1,202 @@
+*{margin:0;padding:0;}
+body{
+    background:#cdcdcd;
+    position:relative;
+}
+@font-face {
+    font-family: 'alarm_clock';
+    src: url('./alarm_clock.eot');
+    src: url('./alarm_clock.eot') format('embedded-opentype'),
+    url('./alarm_clock.woff2') format('woff2'),
+    url('./alarm_clock.woff') format('woff'),
+    url('./alarm_clock.ttf') format('truetype'),
+    url('./alarm_clock.svg#alarm_clock') format('svg');
+}
+
+.clock2-background{
+    background:#9f9f9f;
+    height:350px;
+    width:370px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.click2-wrapper{
+    height:270px;
+    width:270px;
+    border-radius:25%;
+    background:#e2e7e1;
+    box-shadow:-4px -3px 5px #adadad inset;
+    filter:drop-shadow(4px 8px 5px grey) ;
+}
+
+.clock{
+    height:210px;
+    width:210px;
+    border-radius:50%;
+    background:#6f6f6f;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    box-shadow: 0 0 16px #2f2f2f inset;
+}
+
+.clock>div{
+    position:absolute;
+    left:50%;
+    top:50%;
+    height:1px;
+    width:80px;
+    transition:all 0.3s;
+    transition-timing-function:cubic-bezier(0.1, 2.7, 0.58, 1)
+}
+.clock>.second-hand{
+    height:1px;
+    width:140px;
+    transform:rotate(-90deg);
+    transform-origin:15px ;
+    margin-left:-14px;
+    border:110px solid #C8453C;
+    border-top-width:2px;
+    border-bottom-width:2px;
+    border-right-color:transparent;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-radius:110px;
+    z-index:4;
+    filter:drop-shadow(0 0 4px black);
+}
+.clock>.minute-hand{
+    height:8px;
+    width:80px;
+    background:#fdfdfd;
+    margin-top:-1px;
+    transform:rotate(-90deg);
+    transform-origin:0 4px;
+    border-radius:8px;
+    z-index:2;
+    filter:drop-shadow(0 0 4px black);
+}
+.clock>.hour-hand{
+    width:70px;
+    height:10px;
+    background:#fdfdfd;
+    margin-top:-2px;
+    transform:rotate(-90deg);
+    transform-origin:0 5px;
+    border-radius:10px;
+    z-index:1;
+    filter:drop-shadow(0 0 4px black);
+}
+.clock >.little-circle{
+    z-index:5;
+    width:10px;
+    height:10px;
+    border-radius:10px;
+    background:#C8453C;
+    margin-top:-5px;
+    margin-left:-5px;
+    filter:drop-shadow(0 0 4px black);
+}
+.clock >.middle-circle{
+    width:20px;
+    height:20px;
+    border-radius:20px;
+    background:#fdfdfd;
+    margin-top:-10px;
+    margin-left:-10px;
+    z-index:3;
+    filter:drop-shadow(0 0 4px black);
+}
+
+
+
+.click2-number{
+    font-size:20px;
+    position:relative;
+    font-weight: 500;
+}
+.click2-number > .click12{
+    position:absolute;
+    top:-132px;
+    left:-146px;
+}
+
+.click2-number > .click3{
+    position:absolute;
+    top:-10px;
+    left:-22px;
+}
+
+.click2-number > .click6{
+    position:absolute;
+    top:108px;
+    left:-146px;
+}
+.click2-number > .click9{
+    position:absolute;
+    top:-10px;
+    left:-261px;
+}
+
+
+
+
+.clock-background{
+    height:350px;
+    width:370px;
+    background-image: url(https://pic2.zhimg.com/v2-cca83646f59a923c6c239364f9a983f4_r.jpg?source=1940ef5c);
+    position:relative;
+    margin:0 auto;
+
+}
+.clockWrapper{
+    border-left:3px solid #848484;
+    border-top:3px solid #565656;
+    border-right:3px solid #3a3a3a;
+    border-bottom:3px solid #444444;
+    height:120px;
+    width:250px;
+    position:absolute;
+    border-radius:15px;
+    top:33%;
+    left:15%;
+    background:#111;
+    box-shadow: 6px 4px 2px #0f0f0f;
+}
+.week{
+    color:#07e09f;
+    font-family: Arial;
+    position:absolute;
+    left:20px;
+    top:15px;
+    font-size:10px;
+}
+.clockWrapper .day{
+    font-family: 'alarm_clock';
+    color:#07e09f;
+    position:absolute;
+    font-size:14px;
+    right:20px;
+    top:15px;
+}
+ .hours-minutes{
+    font-family: 'alarm_clock';
+    color:#07e09f;
+     font-size:50px;
+     margin-top:50px;
+     margin-left:25px;
+     display:inline-block;
+}
+ .seconds{
+     font-family: 'alarm_clock';
+     color:#07e09f;
+     font-size:30px;
+     margin-top:50px;
+     margin-left:3px;
+     display:inline-block;
+ }
+
